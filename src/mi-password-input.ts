@@ -3,8 +3,8 @@ import { customElement, property } from 'lit/decorators.js';
 
 import { genPasswordRules, Config } from './utils/gen_password_rules';
 
-@customElement('password-input')
-export class PasswordInput extends LitElement {
+@customElement('mi-password-input')
+export class MIPasswordInput extends LitElement {
   @property({ type: String })
   minlength = '';
 
@@ -75,6 +75,6 @@ export class PasswordInput extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'password-input': PasswordInput;
+    'password-input': MIPasswordInput;
   }
 }
