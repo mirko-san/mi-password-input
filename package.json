@@ -1,0 +1,22 @@
+{
+  "name": "mi-password-input",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "fmt": "prettier . --write",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "lit": "^3.1.2"
+  },
+  "devDependencies": {
+    "prettier": "3.2.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6",
+    "vitest": "^1.4.0"
+  }
+}
