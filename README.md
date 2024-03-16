@@ -16,14 +16,14 @@ This project aims to comply with the [`passwordrules` attribute](https://github.
   </head>
   <body>
     <form>
-      <password-input
+      <mi-password-input
         minlength="4"
         maxlength="6"
         required="true"
-      ></password-input>
+      ></mi-password-input>
       <input type="submit" />
     </form>
-    <script src="https://unpkg.com/mi-password-input/dist/password-input.umd.js"></script>
+    <script src="https://unpkg.com/mi-password-input/dist/mi-password-input.umd.js"></script>
   </body>
 </html>
 ```

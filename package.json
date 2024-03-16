@@ -22,12 +22,12 @@
     "vite": "^5.1.6",
     "vitest": "^1.4.0"
   },
-  "main": "dist/password-input.umd.js",
-  "module": "dist/password-input.es.js",
-  "unpkg": "dist/password-input.umd.js",
+  "main": "dist/mi-password-input.umd.js",
+  "module": "dist/mi-password-input.es.js",
+  "unpkg": "dist/mi-password-input.umd.js",
   "files": [
-    "dist/password-input.es.js",
-    "dist/password-input.umd.js"
+    "dist/mi-password-input.es.js",
+    "dist/mi-password-input.umd.js"
   ],
   "license": "MIT"
 }

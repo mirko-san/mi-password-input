@@ -4,12 +4,12 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   build: {
     lib: {
-      entry: 'src/password-input.ts',
+      entry: 'src/mi-password-input.ts',
       name: 'password-input',
-      fileName: (format) => `password-input.${format}.js`,
+      fileName: (format) => `mi-password-input.${format}.js`,
     },
     rollupOptions: {
-      input: 'src/password-input.ts',
+      input: 'src/mi-password-input.ts',
       output: {
         dir: 'dist/',
         format: 'es',
