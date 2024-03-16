@@ -1,6 +1,6 @@
 {
   "name": "mi-password-input",
-  "version": "0.0.0-post.5",
+  "version": "0.0.0-post.6",
   "type": "module",
   "repository": {
     "type": "git",
@@ -22,9 +22,9 @@
     "vite": "^5.1.6",
     "vitest": "^1.4.0"
   },
-  "main": "password-input.umd.js",
-  "module": "password-input.es.js",
-  "unpkg": "password-input.umd.js",
+  "main": "dist/password-input.umd.js",
+  "module": "dist/password-input.es.js",
+  "unpkg": "dist/password-input.umd.js",
   "files": [
     "dist/password-input.es.js",
     "dist/password-input.umd.js"
