@@ -19,7 +19,9 @@ This project aims to comply with the [`passwordrules` attribute](https://github.
       <mi-password-input
         minlength="4"
         maxlength="6"
-        required="true"
+        required
+        allow-lower
+        allow-upper
       ></mi-password-input>
       <input type="submit" />
     </form>
