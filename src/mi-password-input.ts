@@ -14,6 +14,12 @@ export class MIPasswordInput extends LitElement {
   @property({ type: String })
   required = '';
 
+  @property({ type: Boolean, attribute: 'allow-lower' })
+  allowLower = false;
+
+  @property({ type: Boolean, attribute: 'allow-upper' })
+  allowUpper = false;
+
   parseRequired(s: string): boolean {
     if (s === 'true') {
       return true;
@@ -40,6 +46,15 @@ export class MIPasswordInput extends LitElement {
     const o: Config = {
       minlength: minlength || undefined,
       maxlength: maxlength || undefined,
+      allow: {
+        lower: this.allowLower,
+        upper: this.allowUpper,
+        // NOTE:
+        // 数字のみ補完されるようにするためには allowed: digit ルールを明示的に追加する必要がある
+        // 現在の設計では allowDigit を false にするメリットがないため attribute として宣言はしないが
+        // 変数として定義はしておき true を強制する
+        digit: true,
+      },
     };
     return genPasswordRules(o);
   }
