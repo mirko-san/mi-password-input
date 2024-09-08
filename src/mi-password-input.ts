@@ -11,24 +11,14 @@ export class MIPasswordInput extends LitElement {
   @property({ type: String })
   maxlength = '';
 
-  @property({ type: String })
-  required = '';
+  @property({ type: Boolean })
+  required = false;
 
   @property({ type: Boolean, attribute: 'allow-lower' })
   allowLower = false;
 
   @property({ type: Boolean, attribute: 'allow-upper' })
   allowUpper = false;
-
-  parseRequired(s: string): boolean {
-    if (s === 'true') {
-      return true;
-    }
-    if (s === 'false') {
-      return false;
-    }
-    throw new Error('Parse Error.');
-  }
 
   buildPasswordrules(): string {
     let minlength = this.minlength === null ? null : parseInt(this.minlength);
@@ -67,7 +57,7 @@ export class MIPasswordInput extends LitElement {
           minlength="${this.minlength}"
           maxlength="${this.maxlength}"
           autocomplete="new-password"
-          ?required="${this.parseRequired(this.required)}"
+          ?required="${this.required}"
         />
       `;
     }
@@ -77,7 +67,7 @@ export class MIPasswordInput extends LitElement {
         minlength="${this.minlength}"
         maxlength="${this.maxlength}"
         autocomplete="new-password"
-        ?required="${this.parseRequired(this.required)}"
+        ?required="${this.required}"
         passwordrules="${this.buildPasswordrules()}"
       />
     `;
